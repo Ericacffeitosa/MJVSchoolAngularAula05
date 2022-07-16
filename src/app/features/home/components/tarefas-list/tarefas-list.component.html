@@ -1,0 +1,15 @@
+<table>
+    <h1>Tarefas</h1>
+    <tr>
+        <th>ID</th>        
+        <th>Descrição Tarefa</th>        
+        <th>Data</th>
+        <th>Status</th>        
+    </tr>
+    <tr *ngFor = "let tarefas of tarefas">
+        <td> {{ tarefas.id }} </td>        
+        <td> {{ tarefas.description }} </td>        
+        <td> {{ tarefas.inclusionDate | date }}</td>
+        <td> {{ tarefas.completed }} </td>
+    </tr>
+</table>
